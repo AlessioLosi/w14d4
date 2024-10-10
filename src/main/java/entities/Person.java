@@ -18,7 +18,7 @@ public class Person {
     private char sesso;
 
 
-    @OneToMany(mappedBy = "persona")
+    @OneToMany(mappedBy = "persona", cascade = CascadeType.REMOVE)
     private List<Attendance> listaPartecipazioni;
 
     public Person() {
