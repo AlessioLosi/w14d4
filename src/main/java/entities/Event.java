@@ -1,11 +1,13 @@
 package entities;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 import java.time.LocalDate;
 import java.util.List;
 
 @Entity
 @Table(name = "eventi")
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Event {
     @Id
     @GeneratedValue

@@ -1,9 +1,9 @@
 package dao;
 
 import entities.Attendance;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityTransaction;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityTransaction;
 
 public class AttendancesDAO {
     private EntityManager em;

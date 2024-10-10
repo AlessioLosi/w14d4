@@ -1,9 +1,9 @@
 package dao;
 
 import entities.Person;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityTransaction;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityTransaction;
 
 public class PeopleDAO {
     private EntityManager em;
